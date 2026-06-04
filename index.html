@@ -47,9 +47,30 @@ header{
     padding:80px 20px;
 }
 
+    <div class="container">
+
+  <h2>Оценка аккаунта</h2>
+
+  <input id="robux" type="number" placeholder="Робуксы (R$)">
+  <input id="games" type="number" placeholder="Прокачка (0-10)">
+  <input id="age" type="number" placeholder="Возраст аккаунта">
+
+  <select id="currency">
+    <option value="RUB">₽ RUB</option>
+    <option value="USD">$ USD</option>
+    <option value="EUR">€ EUR</option>
+    <option value="UAH">₴ UAH</option>
+  </select>
+
+  <button onclick="calculate()">Рассчитать</button>
+
+  <h2 id="result">Цена: -</h2>
+
+</div>
 .hero h1{
     font-size:48px;
     margin-bottom:15px;
+
 }
 
 .hero p{
@@ -191,3 +212,4 @@ function calculate(){
   <option value="EUR">€ EUR</option>
   <option value="UAH">₴ UAH</option>
 </select>
+<script src="script.js"></script>
